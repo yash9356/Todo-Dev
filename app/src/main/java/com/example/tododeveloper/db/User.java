@@ -16,6 +16,6 @@ public class User {
     @ColumnInfo(name = "last_name")
     public String lastName;
 
-//    @ColumnInfo(name = "time")
-//    public String eventtime;
+    @ColumnInfo(name = "time")
+    public String eventtime;
 }

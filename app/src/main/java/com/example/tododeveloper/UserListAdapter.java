@@ -41,9 +41,9 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyView
     public void onBindViewHolder(@NonNull UserListAdapter.MyViewHolder holder, int position) {
         holder.EventTitle.setText(this.userList.get(position).firstName);
         holder.EventDescription.setText(this.userList.get(position).lastName);
-//        if (!this.userList.get(position).eventtime.isEmpty()){
-//            holder.Time1.setText(this.userList.get(position).eventtime);
-//        }
+        if (!this.userList.get(position).eventtime.isEmpty()){
+            holder.Time1.setText(this.userList.get(position).eventtime);
+        }
         holder.delete_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
