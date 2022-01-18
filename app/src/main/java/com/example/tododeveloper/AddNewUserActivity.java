@@ -102,7 +102,7 @@ public class AddNewUserActivity extends AppCompatActivity {
         User user = new User();
         user.firstName = firstName;
         user.lastName = lastName;
-//        user.eventtime = eventtime;
+        user.eventtime = eventtime;
         db.userDao().insertUser(user);
 
         finish();
